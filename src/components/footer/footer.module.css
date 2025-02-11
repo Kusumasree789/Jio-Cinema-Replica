@@ -1,0 +1,41 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #000;
+    color: #ddd;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.section {
+    flex: 1;
+    margin: 10px;
+    min-width: 150px;
+}
+
+.heading {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list li {
+    margin-bottom: 5px;
+}
+
+.list li:hover {
+    cursor: pointer;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+}
