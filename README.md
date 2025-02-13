@@ -1,6 +1,6 @@
 # Jio Cinema Replica
 
-A simple project replicating the user interface and functionality of the Jio Cinema platform. This project demonstrates how to build a movie streaming interface using modern web technologies such as HTML, CSS, and JavaScript.
+A simple project replicating the user interface and functionality of the Jio Cinema platform. This project demonstrates how to build a movie streaming interface using modern web technologies such as HTML, CSS, JavaScript and React.js.
 
 ## Features
 
