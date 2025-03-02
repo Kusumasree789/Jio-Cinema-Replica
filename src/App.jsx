@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
 import Home from './pages/Home';
-import { movies } from './movies/movies_data.json'
+import moviesData from './movies/movies_data.json'
+
+const { movies } = moviesData;
 
 function App() {
   return (
