@@ -5,6 +5,7 @@ import searchIcon from '../../assets/ic_search.svg'
 // import voicesearchIcon from '../../assets/OIP.jpeg'
 import userIcon from '../../assets/Pink.png'
 import { useState, useEffect } from 'react'
+import PropTypes from 'prop-types'
 import Show from '../show/Show'
 
 
@@ -26,7 +27,7 @@ const Header = (props) => {
         {
             setFilteredMovies([])
         }
-    },[searchTitle])
+    },[searchTitle, props.movies])
     
     return (
         <>
@@ -69,7 +70,7 @@ const Header = (props) => {
                     <div className={styles.searchResults}>
                         {
                             filteredMovies.map((movie)=>{
-                                return <Show movie={movie} />
+                                return <Show key={movie.name} movie={movie} />
                             })
                         }
                     </div>
@@ -79,5 +80,12 @@ const Header = (props) => {
         </>
     )
 }
+Header.propTypes = {
+    movies: PropTypes.arrayOf(
+        PropTypes.shape({
+            name: PropTypes.string.isRequired
+        })
+    ).isRequired
+}
 
-export default Header
+export default Header;
