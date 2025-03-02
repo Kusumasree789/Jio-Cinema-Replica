@@ -10,6 +10,9 @@ export default defineConfig(({ mode }) => {
     server: {
       host: '0.0.0.0',
       port: env.PORT || 4173
+    },
+    preview: {
+      allowedHosts: ['jio-cinema-replica.onrender.com']
     }
   }
 })
