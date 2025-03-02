@@ -24,7 +24,8 @@ export default function Home()
     useEffect(() => {
         async function fetchData() {
             try {
-                let movieResponse = await fetch("http://localhost:3000/movies");
+                const apiUrl = import.meta.env.REACT_APP_API_URL || 'http://localhost:3000';
+                let movieResponse = await fetch(`${apiUrl}/movies`);
                 let moviesData = await movieResponse.json();
                 setMovies(moviesData);
 
