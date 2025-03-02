@@ -3,7 +3,7 @@ import JClogo from '../../assets/jioc_logo.svg'
 import crown from '../../assets/crown.svg'
 import searchIcon from '../../assets/ic_search.svg'
 // import voicesearchIcon from '../../assets/OIP.jpeg'
-import userIcon from '../../assets/pink.png'
+import userIcon from '../../assets/Pink.png'
 import { useState, useEffect } from 'react'
 import Show from '../show/Show'
 
